@@ -2,8 +2,8 @@ var EventEmitter = require('events').EventEmitter;
 
 var jeu = new EventEmitter();
 
-jeu.on('nouveaujoueur', function(message){
-    console.log(message);
+jeu.on('nouveaujoueur', function(nom,age){
+      console.log(`nouveau joueur ${nom} a ${age}`);
 });
 
 jeu.on('gameover', function(message){
